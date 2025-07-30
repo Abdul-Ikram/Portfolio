@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Code2, Database, Globe, Zap } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 

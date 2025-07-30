@@ -1,5 +1,6 @@
-import React from 'react';
-import { Calendar, MapPin, ExternalLink } from 'lucide-react';
+// import React from 'react';
+import { Calendar, MapPin } from 'lucide-react';
+// import { Calendar, MapPin, ExternalLink } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 

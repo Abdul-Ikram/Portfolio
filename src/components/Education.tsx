@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { GraduationCap, Award, Calendar, MapPin } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
