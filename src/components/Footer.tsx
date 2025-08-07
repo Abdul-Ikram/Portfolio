@@ -18,7 +18,7 @@ const Footer = () => {
             variant="outline"
             size="sm"
             onClick={scrollToTop}
-            className="border-gray-600 text-gray-300 hover:text-white hover:border-white"
+            className="border-gray-600 text-primary hover:text-primary hover:border-white"
           >
             <ArrowUp className="h-4 w-4 mr-2" />
             Back to Top
@@ -28,8 +28,8 @@ const Footer = () => {
           <div className="text-center space-y-4">
             <h3 className="text-2xl font-bold">Abdul Ikram</h3>
             <p className="text-gray-300 max-w-md">
-              Senior Python Developer passionate about building scalable applications 
-              and solving complex problems with clean, efficient code.
+              Software Engineer & AI Developer passionate about building intelligent, scalable systems 
+              that solve real-world problems using Python and machine learning.
             </p>
           </div>
 

@@ -7,43 +7,32 @@ import { Badge } from '@/components/ui/badge';
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Python Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
-      description: "Leading a team of 5 developers in building scalable web applications using Django and React. Architected microservices infrastructure serving 100K+ daily active users.",
+      title: "Junior Software Engineer",
+      company: "Digimark Developers",
+      location: "Johar Town, LHR",
+      period: "July 2024 - Present",
+      description: "Contributing to the development and optimization of backend systems using Python and Django/FastAPI. Working on AI-integrated projects involving OpenAI APIs and intelligent automation pipelines.",
       achievements: [
-        "Reduced application load time by 40% through optimization",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Mentored 3 junior developers and conducted code reviews"
+        "Contributing to backend systems development using Python and Django/FastAPI",
+        "Working on AI-integrated projects with OpenAI APIs and automation pipelines",
+        "Collaborating with cross-functional teams to build scalable REST APIs",
+        "Involved in designing project architecture and improving code quality"
       ],
-      technologies: ["Python", "Django", "React", "PostgreSQL", "AWS", "Docker"]
+      technologies: ["Python", "Django", "FastAPI", "OpenAI API", "PostgreSQL", "REST APIs"]
     },
     {
-      title: "Full Stack Python Developer",
-      company: "DataFlow Inc.",
-      location: "New York, NY",
-      period: "2020 - 2022",
-      description: "Developed and maintained multiple web applications using Flask and Django. Built data processing pipelines handling millions of records daily.",
+      title: "Data Science Intern",
+      company: "CORVIT",
+      location: "Gulberg, LHR",
+      period: "Oct 2023 - Feb 2024",
+      description: "Gained foundational knowledge in AI through coursework and practical application. Collaborated with teams to analyze data and implement machine learning algorithms.",
       achievements: [
-        "Built RESTful APIs serving 50+ client applications",
-        "Designed and implemented real-time data processing system",
-        "Improved database query performance by 35%"
+        "Gained foundational knowledge in AI through coursework and practical application",
+        "Collaborated with teams to analyze data and implement ML algorithms",
+        "Contributed to projects with significant improvements in data analysis efficiency",
+        "Developed skills in data manipulation, statistical analysis, and ML techniques"
       ],
-      technologies: ["Python", "Flask", "Django", "MongoDB", "Redis", "Celery"]
-    },
-    {
-      title: "Python Developer",
-      company: "StartupXYZ",
-      location: "Austin, TX",
-      period: "2019 - 2020",
-      description: "Worked on MVP development for fintech startup. Built core backend services and integrated third-party payment systems.",
-      achievements: [
-        "Developed MVP from scratch serving 10K+ users",
-        "Integrated Stripe and PayPal payment gateways",
-        "Implemented automated testing achieving 90% code coverage"
-      ],
-      technologies: ["Python", "FastAPI", "PostgreSQL", "React", "Stripe API"]
+      technologies: ["Python", "Machine Learning", "Data Analysis", "Statistical Analysis"]
     }
   ];
 

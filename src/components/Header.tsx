@@ -51,7 +51,7 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground/80 hover:text-primary transition-colors duration-200 font-medium"
+                className="text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </button>
@@ -77,7 +77,7 @@ const Header = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-left py-2 text-foreground/80 hover:text-primary transition-colors duration-200 font-medium"
+                  className="text-left bg-white py-2 text-foreground/80 hover:text-primary transition-colors duration-200 font-medium"
                 >
                   {item.label}
                 </button>
