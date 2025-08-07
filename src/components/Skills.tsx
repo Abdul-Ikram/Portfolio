@@ -1,21 +1,21 @@
 // import React from 'react';
-import { Progress } from '@/components/ui/progress';
+// import { Progress } from '@/components/ui/progress';
 import { Badge } from '@/components/ui/badge';
 
 const Skills = () => {
-  const technicalSkills = [
-    { name: 'Python', level: 95 },
-    { name: 'C++', level: 80 },
-    { name: 'Django', level: 88 },
-    { name: 'FastAPI', level: 85 },
-    { name: 'Flask', level: 82 },
-    { name: 'PostgreSQL', level: 85 },
-    { name: 'SQLite', level: 80 },
-    { name: 'TensorFlow', level: 78 },
-    { name: 'Scikit-learn', level: 80 },
-    { name: 'OpenAI API', level: 85 },
-    { name: 'Git', level: 88 }
-  ];
+  // const technicalSkills = [
+  //   { name: 'Python', level: 95 },
+  //   { name: 'C++', level: 80 },
+  //   { name: 'Django', level: 88 },
+  //   { name: 'FastAPI', level: 85 },
+  //   { name: 'Flask', level: 82 },
+  //   { name: 'PostgreSQL', level: 85 },
+  //   { name: 'SQLite', level: 80 },
+  //   { name: 'TensorFlow', level: 78 },
+  //   { name: 'Scikit-learn', level: 80 },
+  //   { name: 'OpenAI API', level: 85 },
+  //   { name: 'Git', level: 88 }
+  // ];
 
   const tools = [
     'VS Code', 'Jupyter Notebook', 'Git', 'Linux', 'Pandas', 'NumPy', 
