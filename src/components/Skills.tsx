@@ -5,27 +5,26 @@ import { Badge } from '@/components/ui/badge';
 const Skills = () => {
   const technicalSkills = [
     { name: 'Python', level: 95 },
-    { name: 'Django', level: 90 },
-    { name: 'Flask', level: 85 },
-    { name: 'FastAPI', level: 88 },
-    { name: 'PostgreSQL', level: 87 },
-    { name: 'MongoDB', level: 80 },
-    { name: 'React.js', level: 85 },
-    { name: 'JavaScript', level: 82 },
-    { name: 'Docker', level: 78 },
-    { name: 'AWS', level: 75 },
-    { name: 'Redis', level: 80 },
-    { name: 'Git', level: 90 }
+    { name: 'C++', level: 80 },
+    { name: 'Django', level: 88 },
+    { name: 'FastAPI', level: 85 },
+    { name: 'Flask', level: 82 },
+    { name: 'PostgreSQL', level: 85 },
+    { name: 'SQLite', level: 80 },
+    { name: 'TensorFlow', level: 78 },
+    { name: 'Scikit-learn', level: 80 },
+    { name: 'OpenAI API', level: 85 },
+    { name: 'Git', level: 88 }
   ];
 
   const tools = [
-    'PyCharm', 'VS Code', 'Jupyter', 'Postman', 'Figma', 'Jenkins', 
-    'Kubernetes', 'Nginx', 'ElasticSearch', 'Celery', 'RabbitMQ', 'Pandas'
+    'VS Code', 'Jupyter Notebook', 'Git', 'Linux', 'Pandas', 'NumPy', 
+    'PIL', 'MoviePy', 'Matplotlib', 'Seaborn', 'Tableau', 'YOLOv8'
   ];
 
   const frameworks = [
-    'Django REST Framework', 'SQLAlchemy', 'Alembic', 'Pytest', 
-    'Next.js', 'TailwindCSS', 'Bootstrap', 'Selenium'
+    'Django REST Framework', 'TensorFlow', 'Keras', 'Scikit-learn', 
+    'OpenAI API', 'YOLOv8', 'Pandas', 'NumPy'
   ];
 
   return (
@@ -36,14 +35,14 @@ const Skills = () => {
             Technical Skills
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            A comprehensive overview of my technical expertise and proficiency levels across various technologies.
+            Technical expertise and proficiency levels across programming languages, AI/ML frameworks, and development tools.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          <div className="space-y-8">
+          {/* <div className="space-y-8">
             <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-              Core Technologies
+              Programming & Backend
             </h3>
             <div className="space-y-6">
               {technicalSkills.map((skill, index) => (
@@ -63,12 +62,12 @@ const Skills = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-                Frameworks & Libraries
+                AI/ML & Data Analysis
               </h3>
               <div className="flex flex-wrap gap-2">
                 {frameworks.map((framework, index) => (
@@ -85,7 +84,7 @@ const Skills = () => {
 
             <div>
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
-                Tools & Platforms
+                Development Tools
               </h3>
               <div className="flex flex-wrap gap-2">
                 {tools.map((tool, index) => (
@@ -105,11 +104,11 @@ const Skills = () => {
                 Professional Strengths
               </h4>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li>• Agile/Scrum methodology and team collaboration</li>
-                <li>• Test-driven development and code quality assurance</li>
-                <li>• Performance optimization and scalability planning</li>
-                <li>• API design and microservices architecture</li>
-                <li>• DevOps practices and CI/CD pipeline implementation</li>
+                <li>• Strong analytical thinking and decision-making under pressure</li>
+                <li>• Self-motivated team player with proactive collaboration</li>
+                <li>• AI integration and intelligent automation systems</li>
+                <li>• RESTful API development and database management</li>
+                <li>• Continuous learning and technology exploration</li>
               </ul>
             </div>
           </div>

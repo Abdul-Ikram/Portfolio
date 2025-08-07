@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
+import { FaMedium } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,15 +27,15 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     await new Promise(resolve => setTimeout(resolve, 1000));
-    
+
     toast({
       title: "Message sent successfully!",
       description: "Thank you for your message. I'll get back to you soon.",
     });
-    
+
     setFormData({ name: '', email: '', subject: '', message: '' });
     setIsSubmitting(false);
   };
@@ -43,19 +44,19 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       label: "Email",
-      value: "abdul.ikram@example.com",
-      href: "mailto:abdul.ikram@example.com"
+      value: "abdulikram202@gmail.com",
+      href: "mailto:abdulikram202@gmail.com"
     },
     {
       icon: <Phone className="h-6 w-6" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "(+92) 307-9439093",
+      href: "tel:+923079439093"
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Johar Town, Lahore",
       href: "#"
     }
   ];
@@ -64,20 +65,20 @@ const Contact = () => {
     {
       name: "GitHub",
       icon: <Github size={24} />,
-      url: "https://github.com/abdul-ikram",
+      url: "https://github.com/Abdul-Ikram",
       color: "hover:text-gray-900 dark:hover:text-white"
     },
     {
       name: "LinkedIn",
       icon: <Linkedin size={24} />,
-      url: "https://linkedin.com/in/abdul-ikram",
+      url: "https://linkedin.com/in/abdulikram",
       color: "hover:text-blue-600"
     },
     {
-      name: "Twitter",
-      icon: <Twitter size={24} />,
-      url: "https://twitter.com/abdul_ikram",
-      color: "hover:text-blue-400"
+      name: "Medium",
+      icon: <FaMedium size={24} />,
+      url: "https://medium.com/@abdulikram",
+      color: "hover:text-black dark:hover:text-white"
     }
   ];
 
@@ -89,7 +90,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            I'm always interested in new opportunities and collaborations. Let's discuss how we can work together!
+            I'm passionate about backend engineering and AI-driven development. Always happy to connect, collaborate, or chat tech!
           </p>
         </div>
 
@@ -101,10 +102,9 @@ const Contact = () => {
                 Let's Connect
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                I'm currently open to new opportunities and exciting projects. Whether you have a 
-                question about my work, want to collaborate, or just want to say hello, I'd love to hear from you.
+                I'm currently focused on backend and AI-driven development. Open to freelance projects, collaborations, or insightful conversations — feel free to reach out!
               </p>
-              
+
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-center space-x-4">
@@ -115,7 +115,7 @@ const Contact = () => {
                       <p className="font-medium text-gray-900 dark:text-white">
                         {info.label}
                       </p>
-                      <a 
+                      <a
                         href={info.href}
                         className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                       >
@@ -157,7 +157,7 @@ const Contact = () => {
                 <div className="space-y-2 text-sm">
                   <div className="flex items-center justify-between">
                     <span>Full-time positions</span>
-                    <span className="text-green-600 font-medium">Available</span>
+                    <span className="text-red-600 font-medium">Unavailable</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span>Freelance projects</span>
@@ -209,7 +209,7 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Subject *
@@ -224,7 +224,7 @@ const Contact = () => {
                     placeholder="What's this about?"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Message *
@@ -239,9 +239,9 @@ const Contact = () => {
                     placeholder="Tell me about your project or opportunity..."
                   />
                 </div>
-                
-                <Button 
-                  type="submit" 
+
+                <Button
+                  type="submit"
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white"
                   disabled={isSubmitting}
                 >

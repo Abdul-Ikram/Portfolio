@@ -1,5 +1,6 @@
 // import React from 'react';
 import { ArrowDown, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { FaMedium } from 'react-icons/fa';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -18,24 +19,24 @@ const Hero = () => {
             Abdul Ikram
           </h1>
           <h2 className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-semibold mb-6">
-            Senior Python Developer
+            Software Engineer & AI Developer
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-            Passionate about building scalable web applications and data-driven solutions. 
-            Specialized in Python, Django, Flask, and modern web technologies with 5+ years of experience.
+            Enthusiastic Software Engineer with hands-on experience in backend development, AI integration,
+            and automation using Python. Passionate about building intelligent, scalable systems that solve real-world problems.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg"
               onClick={() => scrollToAbout()}
             >
               View My Work
               <ArrowDown className="ml-2 h-5 w-5" />
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="lg"
               className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 text-lg"
             >
@@ -45,35 +46,42 @@ const Hero = () => {
           </div>
 
           <div className="flex justify-center space-x-6">
-            <a 
-              href="mailto:abdul.ikram@example.com" 
+            <a
+              href="mailto:abdulikram202@gmail.com"
               className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
-              aria-label="Email"
+              aria-label="Email" target='blank'
             >
               <Mail size={24} />
             </a>
-            <a 
-              href="https://linkedin.com/in/abdul-ikram" 
+            <a
+              href="https://www.linkedin.com/in/abdulikram/"
               className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
-              aria-label="LinkedIn"
+              aria-label="LinkedIn" target='blank'
             >
               <Linkedin size={24} />
             </a>
-            <a 
-              href="https://github.com/abdul-ikram" 
+            <a
+              href="https://github.com/Abdul-Ikram"
               className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
-              aria-label="GitHub"
+              aria-label="GitHub" target='blank'
             >
               <Github size={24} />
+            </a>
+            <a
+              href="https://medium.com/@abdulikram"
+              className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+              aria-label="Medium" target='blank'
+            >
+              <FaMedium size={24} />
             </a>
           </div>
         </div>
       </div>
-      
+
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <button 
+        <button
           onClick={scrollToAbout}
-          className="text-gray-400 hover:text-blue-600 transition-colors duration-200"
+          className="text-white bg-blue-600 transition-colors duration-200"
         >
           <ArrowDown size={32} />
         </button>

@@ -6,61 +6,57 @@ import { Badge } from '@/components/ui/badge';
 const Education = () => {
   const education = [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      location: "San Francisco, CA",
-      period: "2015 - 2019",
-      gpa: "3.8/4.0",
+      degree: "Bachelor of Science in Information Technology",
+      institution: "Minhaj University",
+      location: "Lahore, Pakistan",
+      period: "2020 - 2024",
+      gpa: "Completed",
       coursework: [
-        "Data Structures & Algorithms",
-        "Database Systems",
-        "Software Engineering",
-        "Web Development",
+        "Artificial Intelligence",
         "Machine Learning",
-        "Computer Networks"
-      ]
-    },
-    {
-      degree: "Full Stack Web Development Bootcamp",
-      institution: "TechAcademy",
-      location: "Online",
-      period: "2019",
-      gpa: "Completed with Distinction",
-      coursework: [
-        "Python/Django",
-        "JavaScript/React",
-        "Database Design",
-        "DevOps Fundamentals",
-        "API Development",
-        "Testing & Deployment"
+        "Data Analysis",
+        "Neural Networks",
+        "Tableau",
+        "Software Engineering"
       ]
     }
   ];
 
   const certifications = [
     {
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
+      name: "Artificial Intelligence",
+      issuer: "Akhuwat",
+      date: "Sep 2024",
+      credentialId: "View Certificate",
+      credentialUrl: "https://drive.google.com/file/d/1b49tHATswoiAsAEQRq910HgoRwifbsk7/view?usp=drive_link"
+    },
+    {
+      name: "Artificial Intelligence",
+      issuer: "Corvit Systems",
+      date: "May 2024",
+      credentialId: "View Certificate",
+      credentialUrl: "https://drive.google.com/file/d/1bZlk3D-ba_VB5yp9Q2380i90dSfUQPdp/view?usp=drive_link"
+    },
+    {
+      name: "Artificial Intelligence (ML, DL, Communication)",
+      issuer: "Minhaj University",
+      date: "May 2023",
+      credentialId: "View Certificate",
+      credentialUrl: "https://drive.google.com/file/d/13DPUc58sSkrqrZv1fd6eNgYX_6oi0nRW/view?usp=drive_link"
+    },
+    {
+      name: "RHEL Intensive",
+      issuer: "ALnafi",
       date: "2023",
-      credentialId: "AWS-CSA-2023-001"
+      credentialId: "View Certificate",
+      credentialUrl: "https://portal.alnafi.com/certificates/a4t1nauynu"
     },
     {
-      name: "Python Professional Certificate",
-      issuer: "Python Institute",
-      date: "2022",
-      credentialId: "PCPP-001-2022"
-    },
-    {
-      name: "Certified Kubernetes Administrator",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2022",
-      credentialId: "CKA-2022-001"
-    },
-    {
-      name: "Django for Professionals",
-      issuer: "Django Software Foundation",
-      date: "2021",
-      credentialId: "DSF-PROF-2021"
+      name: "Software Development Fundamentals",
+      issuer: "Peak Solutions",
+      date: "2020",
+      credentialId: "View Certificate",
+      credentialUrl: "https://drive.google.com/file/d/1LRohBU6Bhkb99gyV-jaolDxzh_hxZj_7/view?usp=drive_link"
     }
   ];
 
@@ -72,7 +68,7 @@ const Education = () => {
             Education & Certifications
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            My academic background and professional certifications that support my expertise in software development.
+            Academic background in Information Technology and professional certifications in AI, machine learning, and software development.
           </p>
         </div>
 
@@ -146,7 +142,14 @@ const Education = () => {
                         </p>
                         <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-300">
                           <span>Issue Date: {cert.date}</span>
-                          <span>ID: {cert.credentialId}</span>
+                          <a
+                            href={cert.credentialUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-500 hover:underline"
+                          >
+                            View Certificate
+                          </a>
                         </div>
                       </div>
                       <Award className="text-yellow-500 ml-4" size={24} />
@@ -162,11 +165,11 @@ const Education = () => {
                 Continuous Learning
               </h4>
               <div className="space-y-2 text-gray-600 dark:text-gray-300">
-                <p>• Active participant in open-source communities</p>
-                <p>• Regular attendee at Python and Django conferences</p>
-                <p>• Contributor to technical blogs and documentation</p>
-                <p>• Mentor for coding bootcamp students</p>
-                <p>• Stay updated with latest technology trends and best practices</p>
+                <p>• Strong analytical thinking with ability to remain composed under pressure</p>
+                <p>• Self-motivated team player with proactive approach to collaboration</p>
+                <p>• Passionate about continuous learning and exploring new technologies</p>
+                <p>• Curiosity-driven development and problem-solving approach</p>
+                <p>• Stay updated with latest AI/ML trends and backend technologies</p>
               </div>
             </div>
           </div>

@@ -1,61 +1,61 @@
 // import React from 'react';
-import { ExternalLink, Github, Eye } from 'lucide-react';
+// import { ExternalLink, Github, Eye } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+// import { Button } from '@/components/ui/button';
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-featured e-commerce platform with payment integration, inventory management, and admin dashboard. Built for scalability with microservices architecture.",
+      title: "AI Construction Plan (EstiMator)",
+      description: "AI-powered backend system that allows users to upload construction-related PDFs and interact with a chatbot for intelligent query handling. Built with Django, PostgreSQL, and OpenAI API.",
       image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Django", "React", "PostgreSQL", "Redis", "Stripe API", "Docker"],
+      technologies: ["Django", "PostgreSQL", "OpenAI API", "REST APIs", "PDF Processing"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true
     },
     {
-      title: "Data Analytics Dashboard",
-      description: "Real-time analytics dashboard for business intelligence with interactive charts, data visualization, and automated reporting features.",
+      title: "AI Uniform Generation (Edge Swagtastics)",
+      description: "Backend-driven platform for designing and ordering custom uniform visuals. Built with Python (Django) and PostgreSQL, integrating Gemini's API to generate dynamic designs.",
       image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Flask", "D3.js", "MongoDB", "Celery", "Chart.js"],
+      technologies: ["Django", "PostgreSQL", "Gemini API", "Custom Design", "Order Management"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true
     },
     {
-      title: "Task Management API",
-      description: "RESTful API for task management with authentication, role-based permissions, and real-time notifications using WebSocket connections.",
+      title: "Chef Qailo",
+      description: "AI-powered recipe recommendation app with core APIs using Django Rest Framework and Neo4j. Features authentication and role-based management for users and admins.",
       image: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["FastAPI", "SQLAlchemy", "JWT", "WebSocket", "pytest"],
+      technologies: ["Django REST Framework", "Neo4j", "Authentication", "AI Recommendations"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
-      title: "Machine Learning Model API",
-      description: "ML model deployment service with model versioning, A/B testing capabilities, and automated model retraining pipeline.",
+      title: "Clip Sort",
+      description: "Python-based media organization tool that auto-sorts images and videos by content type and timestamp using YOLOv8 for object detection and Flask API for remote execution.",
       image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Python", "scikit-learn", "TensorFlow", "FastAPI", "MLflow"],
+      technologies: ["Python", "YOLOv8", "PIL", "MoviePy", "Flask", "Object Detection"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
-      title: "Social Media Aggregator",
-      description: "Social media content aggregation platform with sentiment analysis, trend detection, and automated content curation.",
+      title: "Urdu Handwritten Text Recognition",
+      description: "Deep learning system using CNN to detect and classify fruits in Urdu handwritten text images. Provides bilingual descriptions in English and Urdu with Django deployment.",
       image: "https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Django", "React", "NLP", "Twitter API", "Elasticsearch"],
+      technologies: ["CNN", "Deep Learning", "Django", "Image Recognition", "Bilingual Processing"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
-      title: "IoT Data Processing System",
-      description: "Scalable IoT data processing system handling sensor data from thousands of devices with real-time monitoring and alerting.",
+      title: "House Price Prediction ML Model",
+      description: "Machine learning model for house price prediction deployed using Django framework. Award-winning project recognized for innovation in real estate analytics.",
       image: "https://images.pexels.com/photos/518244/pexels-photo-518244.jpeg?auto=compress&cs=tinysrgb&w=600",
-      technologies: ["Python", "Apache Kafka", "InfluxDB", "Grafana", "Docker"],
+      technologies: ["Machine Learning", "Django", "Predictive Analytics", "Real Estate", "Award Winner"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
@@ -73,7 +73,7 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            A selection of projects that showcase my skills in full-stack development, API design, and data processing.
+            A selection of projects showcasing my expertise in AI integration, backend development, and machine learning applications.
           </p>
         </div>
 
@@ -92,7 +92,7 @@ const Projects = () => {
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                    <Button size="sm" variant="secondary" asChild>
+                    {/* <Button size="sm" variant="secondary" asChild>
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <Eye className="h-4 w-4 mr-2" />
                         Live Demo
@@ -103,7 +103,7 @@ const Projects = () => {
                         <Github className="h-4 w-4 mr-2" />
                         Code
                       </a>
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
                 <CardHeader>
@@ -123,7 +123,7 @@ const Projects = () => {
                     ))}
                   </div>
                   <div className="flex space-x-4 pt-4">
-                    <Button variant="outline" size="sm" asChild>
+                    {/* <Button variant="outline" size="sm" asChild>
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="h-4 w-4 mr-2" />
                         Live Demo
@@ -134,7 +134,7 @@ const Projects = () => {
                         <Github className="h-4 w-4 mr-2" />
                         Source Code
                       </a>
-                    </Button>
+                    </Button> */}
                   </div>
                 </CardContent>
               </Card>
@@ -179,7 +179,7 @@ const Projects = () => {
                     )}
                   </div>
                   <div className="flex space-x-2 pt-2">
-                    <Button variant="outline" size="sm" asChild className="flex-1">
+                    {/* <Button variant="outline" size="sm" asChild className="flex-1">
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="h-3 w-3 mr-1" />
                         Demo
@@ -190,7 +190,7 @@ const Projects = () => {
                         <Github className="h-3 w-3 mr-1" />
                         Code
                       </a>
-                    </Button>
+                    </Button> */}
                   </div>
                 </CardContent>
               </Card>

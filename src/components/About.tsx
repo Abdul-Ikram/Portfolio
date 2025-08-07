@@ -6,23 +6,23 @@ const About = () => {
   const highlights = [
     {
       icon: <Code2 className="h-8 w-8 text-blue-600" />,
-      title: "Full-Stack Development",
-      description: "Expert in Python, Django, React, and modern web technologies"
+      title: "Backend Development",
+      description: "Expert in Python, Django, FastAPI, Flask, and REST APIs"
     },
     {
       icon: <Database className="h-8 w-8 text-emerald-600" />,
-      title: "Data Engineering",
-      description: "Proficient in PostgreSQL, MongoDB, Redis, and data pipeline optimization"
+      title: "AI & Machine Learning",
+      description: "Proficient in TensorFlow, Keras, OpenAI API, YOLOv8, and Scikit-learn"
     },
     {
       icon: <Globe className="h-8 w-8 text-purple-600" />,
-      title: "API Development",
-      description: "RESTful APIs, GraphQL, microservices architecture, and integration"
+      title: "Data Analysis",
+      description: "Pandas, NumPy, Matplotlib, Seaborn, and Tableau for data insights"
     },
     {
       icon: <Zap className="h-8 w-8 text-amber-600" />,
-      title: "Performance Optimization",
-      description: "Application scaling, caching strategies, and performance tuning"
+      title: "Automation & Tools",
+      description: "Git, Linux, VS Code, Jupyter Notebook, and intelligent automation"
     }
   ];
 
@@ -34,7 +34,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            I'm a passionate Python developer with a strong background in building scalable web applications and data-driven solutions.
+            I'm an enthusiastic Software Engineer with hands-on experience in backend development, AI integration, and automation using Python.
           </p>
         </div>
 
@@ -42,19 +42,19 @@ const About = () => {
           <div className="space-y-6">
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                With over 5 years of experience in software development, I specialize in Python ecosystem 
-                technologies including Django, Flask, FastAPI, and modern frontend frameworks. I have a proven 
-                track record of delivering high-quality applications that serve thousands of users.
+                As a recent graduate with a Bachelor's degree in Information Technology from Minhaj University, 
+                I specialize in Python ecosystem technologies including Django, Flask, FastAPI, and AI integration. 
+                I have hands-on experience building intelligent systems and automation pipelines.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                My expertise spans from backend architecture and database design to frontend development 
-                and DevOps practices. I'm passionate about clean code, test-driven development, and 
-                continuous learning in the ever-evolving tech landscape.
+                Currently working as a Junior Software Engineer at Digimark Developers, I contribute to backend 
+                systems optimization and AI-integrated projects. My expertise includes working with OpenAI APIs, 
+                building REST APIs, and managing databases with PostgreSQL and SQLite.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                When I'm not coding, I enjoy contributing to open-source projects, writing technical blogs, 
-                and mentoring junior developers. I believe in the power of technology to solve real-world 
-                problems and make a positive impact.
+                I'm passionate about continuous learning and exploring new technologies. My goal is to contribute 
+                to innovative projects that leverage AI and machine learning to solve real-world problems while 
+                growing as part of a collaborative tech team.
               </p>
             </div>
           </div>
